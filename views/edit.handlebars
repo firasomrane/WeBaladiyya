@@ -1,0 +1,84 @@
+  <header id="main-header" class="py-2 bg-primary text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1> Ajouter votre avis</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ACTIONS -->
+  <section id="action" class="py-4 mb-4 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mr-auto">
+          <a href="/consultation" class="btn btn-light btn-block">
+            <i class="fa fa-arrow-left"></i> Back To Dashboard
+          </a>
+        </div>
+        <div class="col-md-3 ml-auto">
+          <a href="/consultation" class="btn btn-success btn-block">
+            <i class="fa fa-check"></i> Save Changes
+          </a>
+        </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- POSTS -->
+  <section id="posts">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              <h4>Edit Post</h4>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class=" container ml-2 mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Check it if the promise is completely done.
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="body">Body</label>
+                    <textarea name="editor1" class="form-control">La municipalité a pu compléter ce projet avec seuleument un budget minimal de 50 milles dinars.
+                      
+                    </textarea>
+                </div>
+                <div class="form-group">
+                  <label for="file">File Upload</label>
+                  <input type="file" class="form-control-file">
+                  <small class="form-text text-muted">Max Size 3mb</small>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="main-footer" class="bg-dark text-white mt-5 p-5">
+    <div class="conatiner">
+      <div class="row">
+        <div class="col">
+          <p class="lead text-center">Copyright &copy; 2017 Blogen</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdn.ckeditor.com/4.7.1/standard/ckeditor.js"></script>
+  <script>
+      CKEDITOR.replace( 'editor1' );
+  </script>
+</body>
+</html>
