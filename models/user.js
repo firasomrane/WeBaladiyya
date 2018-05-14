@@ -1,8 +1,20 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/youthcan',(err, conn)=>{
+let mongoConfigParams = require('../config');
+
+mongoose.connect(mongoConfigParams.getDbConnectionString(), { useMongoClient: true });
+const db =mongoose.connection;
+
+//handle mongo error
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function () {
+  // we're connected!
+  console.log('connected to db')
+});
+
+/* mongoose.connect('mongodb://localhost/youthcan',(err, conn)=>{
   if (err) console.log(err);
   if(conn) console.log("connected to db");
-});
+}); */
 const bcrypt = require('bcryptjs');
 
 // User Schema

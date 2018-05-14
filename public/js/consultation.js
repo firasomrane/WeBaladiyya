@@ -25,9 +25,6 @@ const environnement_promess_list= document.getElementById("environnement_promess
 const rues_promess_list= document.getElementById("rues_promess_list");
 const associations_promess_list= document.getElementById("associations_promess_list");
 
-//logout_buuton
-const logout =  document.getElementById('logout_button');
-
 //modal element
 const modal_description= document.getElementById("modal_description");
 
@@ -55,6 +52,8 @@ function intializeElements(){
     environnement_promess_list.innerHTML="";
     rues_promess_list.innerHTML="";
     associations_promess_list.innerHTML="";
+    //logout_buuton
+    const logout =  document.getElementById('logout_button');
 }
 
 //set the global informations for municipalities
